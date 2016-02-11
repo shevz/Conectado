@@ -233,6 +233,14 @@ public class Server implements Runnable {
 		}
 		return null;
 	}
+	
+	public void SendGroupList(String[] toWhom) {
+		for (int i = 0; i < clientCount; i++) {
+			for (int j=0;j < clientCount; j++) {
+			findUserThread(toWhom[i]).send(new Message("newuser", "SERVER", clients[j].username, toWhom[i]));
+			}
+		}
+	}
 
 	@SuppressWarnings("deprecation")
 	public synchronized void remove(int ID) {
