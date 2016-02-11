@@ -3,6 +3,8 @@ import java.io.*;
 import java.net.*;
 import java.util.Properties;
 
+import utilities.Logging;
+
 class ServerThread extends Thread {
 
 	public Server server = null;
@@ -85,9 +87,11 @@ public class Server implements Runnable {
 			port = server.getLocalPort();
 			System.out.println(
 					"Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
+			Logging.getLogger().info("Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
 			start();
 		} catch (IOException ioe) {
-			System.out.println("Can not bind to port : " + port + "\nRetrying");
+			System.out.println("Could not bind to port : " + port + "\nRetrying");
+			Logging.getLogger().error("Could not bind to port : " + port + "\nRetrying");
 			RetryStart(0); //when 0 passes through it tell the program to take any available port
 		}
 	}
@@ -103,9 +107,11 @@ public class Server implements Runnable {
 			port = server.getLocalPort();
 			System.out.println(
 					"Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
+			Logging.getLogger().info("Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
 			start();
 		} catch (IOException ioe) {
-			System.out.println("\nCan not bind to port " + port + ": " + ioe.getMessage());
+			System.out.println("\nCould not bind to port " + port + ": " + ioe.getMessage());
+			Logging.getLogger().error("Could not bind to port : " + port + "\nRetrying");
 		}
 	}
 
@@ -116,6 +122,7 @@ public class Server implements Runnable {
 				addThread(server.accept());
 			} catch (Exception ioe) {
 				System.out.println("\nServer accept error: \n");
+				Logging.getLogger().error("\nServer accept error: \nRetrying");
 				RetryStart(0);
 			}
 		}
@@ -243,6 +250,7 @@ public class Server implements Runnable {
 				toTerminate.close();
 			} catch (IOException ioe) {
 				System.out.println("\nError closing thread: " + ioe);
+				Logging.getLogger().error("\nError closing thread: " + ioe);
 			}
 			toTerminate.stop();
 		}
@@ -258,9 +266,11 @@ public class Server implements Runnable {
 				clientCount++;
 			} catch (IOException ioe) {
 				System.out.println("\nError opening thread: " + ioe);
+				Logging.getLogger().error("\nError opening thread: " + ioe);
 			}
 		} else {
 			System.out.println("\nClient refused: maximum " + clients.length + " reached.");
+			Logging.getLogger().info("\nClient refused: maximum " + clients.length + " reached.");
 		}
 	}
 	public void RetryStart(int port){
