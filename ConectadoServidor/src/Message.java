@@ -12,6 +12,7 @@ public class Message implements Serializable{
         this.sender = sender; 
         this.content = content; 
         this.recipient = recipient;
+        this.group=null;
     }
     
     public Message(String type, String sender, String content, String[] recipients){
@@ -19,6 +20,7 @@ public class Message implements Serializable{
         this.sender = sender; 
         this.content = content; 
         this.group = recipients;
+        this.recipient=null;
     }
     
     @Override
