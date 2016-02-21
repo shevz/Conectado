@@ -13,7 +13,7 @@ class ServerThread extends Thread {
 	public String username = "";
 	public ObjectInputStream streamIn = null;
 	public ObjectOutputStream streamOut = null;
-	private volatile boolean running = true;	
+	private volatile boolean running = true; //to end a thread properly--TODO: need to comment this better
 
 	public ServerThread(Server _server, Socket _socket) {
 		super();
@@ -71,11 +71,11 @@ public class Server implements Runnable {
 	public ServerThread clients[];
 	public ServerSocket server = null;
 	public Thread thread = null;
-	private utilities.Props prop= new utilities.Props();
-	private Properties props=prop.getProps();
-	public int clientCount = 0, port=Integer.parseInt(props.getProperty("portNumber"));
+	private utilities.Props prop = new utilities.Props();
+	private Properties props = prop.getProps();
+	public int clientCount = 0, port = Integer.parseInt(props.getProperty("portNumber"));
 	public Database db;
-	private String filePath=props.getProperty("dbPath");	
+	private String filePath = props.getProperty("dbPath");
 
 	public Server() {
 
@@ -87,12 +87,14 @@ public class Server implements Runnable {
 			port = server.getLocalPort();
 			System.out.println(
 					"Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
-			Logging.getLogger().info("Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
+			Logging.getLogger()
+					.info("Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
 			start();
 		} catch (IOException ioe) {
 			System.out.println("Could not bind to port : " + port + "\nRetrying");
 			Logging.getLogger().error("Could not bind to port : " + port + "\nRetrying");
-			RetryStart(0); //when 0 passes through it tell the program to take any available port
+			RetryStart(0); // when 0 passes through it tell the program to take
+							// any available port
 		}
 	}
 
@@ -107,7 +109,8 @@ public class Server implements Runnable {
 			port = server.getLocalPort();
 			System.out.println(
 					"Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
-			Logging.getLogger().info("Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
+			Logging.getLogger()
+					.info("Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
 			start();
 		} catch (IOException ioe) {
 			System.out.println("\nCould not bind to port " + port + ": " + ioe.getMessage());
@@ -177,6 +180,11 @@ public class Server implements Runnable {
 				}
 			} else if (msg.type.equals("test")) {
 				clients[findClient(ID)].send(new Message("test", "SERVER", "OK", msg.sender));
+			} else if (msg.type.equals("group")) {
+				// TODO: overload the message class
+				// findGroupThread(msg.type, msg.sender, msg.content,msg.recipient));
+				SendGroupList(msg.type,msg.sender, msg.content, msg.group);
+				//TODO: check if the above line is working
 			} else if (msg.type.equals("signup")) {
 				if (findUserThread(msg.sender) == null) {
 					if (!db.userExists(msg.sender)) {
@@ -234,10 +242,10 @@ public class Server implements Runnable {
 		return null;
 	}
 	
-	public void SendGroupList(String[] toWhom) {
+	public void SendGroupList(String type, String sender, String content, String[] toWhom) {
 		for (int i = 0; i < toWhom.length; i++) {
-			for (int j=0;j < clientCount; j++) {
-			findUserThread(toWhom[i]).send(new Message("newuser", "SERVER", clients[j].username, toWhom[i]));
+			for (int j = 0; j < clientCount; j++) {
+				findUserThread(toWhom[i]).send(new Message("newuser", sender, clients[j].username, toWhom[i]));
 			}
 		}
 	}
@@ -281,15 +289,16 @@ public class Server implements Runnable {
 			Logging.getLogger().info("\nClient refused: maximum " + clients.length + " reached.");
 		}
 	}
-	public void RetryStart(int port){
-        if(this != null)
-        { 
-        	this.stop(); 
-        }
-       new Server(port);
-    }
-	 public static void main(String args[]) {
-		 Server server = new Server();
-	 }
+
+	public void RetryStart(int port) {
+		if (this != null) {
+			this.stop();
+		}
+		new Server(port);
+	}
+
+	public static void main(String args[]) {
+		new Server();
+	}
 
 }
