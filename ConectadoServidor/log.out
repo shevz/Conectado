@@ -5,3 +5,305 @@
 Retrying
 11/Feb/2016 06:50:47,566- Logging: Properties file loaded
 11/Feb/2016 06:50:47,573- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 25308
+21/Feb/2016 04:59:22,967- Logging: Properties file loaded
+21/Feb/2016 04:59:23,057- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+21/Feb/2016 04:59:56,146- Logging: Properties file loaded
+21/Feb/2016 04:59:56,152- Logging: Could not bind to port : 13000
+Retrying
+21/Feb/2016 04:59:56,153- Logging: Properties file loaded
+21/Feb/2016 04:59:56,160- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 52577
+21/Feb/2016 05:01:33,432- Logging: Properties file loaded
+21/Feb/2016 05:01:33,437- Logging: Could not bind to port : 13000
+Retrying
+21/Feb/2016 05:01:33,438- Logging: Properties file loaded
+21/Feb/2016 05:01:33,446- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 52593
+21/Feb/2016 05:01:58,357- Logging: Properties file loaded
+21/Feb/2016 05:01:58,363- Logging: Could not bind to port : 13000
+Retrying
+21/Feb/2016 05:01:58,364- Logging: Properties file loaded
+21/Feb/2016 05:01:58,371- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 52599
+21/Feb/2016 05:03:55,631- Logging: Properties file loaded
+21/Feb/2016 05:03:55,636- Logging: Could not bind to port : 13000
+Retrying
+21/Feb/2016 05:03:55,636- Logging: Properties file loaded
+21/Feb/2016 05:03:55,643- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 52623
+21/Feb/2016 05:04:09,939- Logging: Properties file loaded
+21/Feb/2016 05:04:09,944- Logging: Could not bind to port : 13000
+Retrying
+21/Feb/2016 05:04:09,945- Logging: Properties file loaded
+21/Feb/2016 05:04:09,952- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 52626
+21/Feb/2016 05:28:56,460- Logging: Properties file loaded
+21/Feb/2016 05:28:56,479- Logging: Could not bind to port : 13000
+Retrying
+21/Feb/2016 05:28:56,480- Logging: Properties file loaded
+21/Feb/2016 05:28:56,501- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 53810
+21/Feb/2016 05:39:31,524- Logging: Properties file loaded
+21/Feb/2016 05:39:31,541- Logging: Could not bind to port : 13000
+Retrying
+21/Feb/2016 05:39:31,542- Logging: Properties file loaded
+21/Feb/2016 05:39:31,554- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 53937
+21/Feb/2016 05:39:31,555- Logging: 
+Waiting for a client ...
+21/Feb/2016 05:40:04,308- Logging: Properties file loaded
+21/Feb/2016 05:40:04,323- Logging: Could not bind to port : 13000
+Retrying
+21/Feb/2016 05:40:04,324- Logging: Properties file loaded
+21/Feb/2016 05:40:04,335- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 53943
+21/Feb/2016 05:40:04,337- Logging: 
+Waiting for a client ...
+21/Feb/2016 12:57:14,555- Logging: Properties file loaded
+21/Feb/2016 12:57:14,567- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+21/Feb/2016 12:57:14,567- Logging: 
+Waiting for a client ...
+21/Feb/2016 12:57:27,650- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=56497,localport=13000]
+21/Feb/2016 12:57:27,653- Logging: 
+Waiting for a client ...
+21/Feb/2016 12:57:27,659- Logging: 
+Removing client thread 56497 at 0
+21/Feb/2016 13:50:00,042- Logging: Properties file loaded
+21/Feb/2016 13:50:00,048- Logging: Could not bind to port : 13000
+Retrying
+21/Feb/2016 13:50:00,049- Logging: Properties file loaded
+21/Feb/2016 13:50:00,056- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 57901
+21/Feb/2016 13:50:00,057- Logging: 
+Waiting for a client ...
+21/Feb/2016 17:31:41,675- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=60900,localport=13000]
+21/Feb/2016 17:31:41,694- Logging: 
+Waiting for a client ...
+21/Feb/2016 17:31:41,695- Logging: 
+Removing client thread 60900 at 0
+21/Feb/2016 17:36:02,169- Logging: Properties file loaded
+21/Feb/2016 17:36:02,182- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+21/Feb/2016 17:36:02,183- Logging: 
+Waiting for a client ...
+21/Feb/2016 17:36:30,019- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=60970,localport=13000]
+21/Feb/2016 17:36:30,022- Logging: 
+Waiting for a client ...
+21/Feb/2016 17:36:30,028- Logging: 60970 ERROR reading: client.Message
+21/Feb/2016 17:36:30,028- Logging: 
+Removing client thread 60970 at 0
+21/Feb/2016 17:37:58,455- Logging: Properties file loaded
+21/Feb/2016 17:37:58,467- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+21/Feb/2016 17:37:58,468- Logging: 
+Waiting for a client ...
+21/Feb/2016 17:43:09,805- Logging: Properties file loaded
+21/Feb/2016 17:43:09,818- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+21/Feb/2016 17:43:09,818- Logging: 
+Waiting for a client ...
+21/Feb/2016 17:43:52,604- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=61042,localport=13000]
+21/Feb/2016 17:43:52,607- Logging: 
+Waiting for a client ...
+21/Feb/2016 17:43:52,614- Logging: 
+61042 ERROR reading: client.Message
+21/Feb/2016 17:43:52,614- Logging: 
+Removing client thread 61042 at 0
+22/Feb/2016 18:35:23,271- Logging: Properties file loaded
+22/Feb/2016 18:35:23,340- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+22/Feb/2016 18:35:23,341- Logging: 
+Waiting for a client ...
+22/Feb/2016 18:35:41,967- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18273,localport=13000]
+22/Feb/2016 18:35:41,996- Logging: 
+Waiting for a client ...
+22/Feb/2016 18:35:42,025- Logging: 
+18273 ERROR reading: client.Message
+22/Feb/2016 18:35:42,026- Logging: 
+Removing client thread 18273 at 0
+22/Feb/2016 18:42:47,165- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18479,localport=13000]
+22/Feb/2016 18:42:47,166- Logging: 
+Waiting for a client ...
+22/Feb/2016 18:42:47,169- Logging: 
+18479 ERROR reading: client.Message
+22/Feb/2016 18:42:47,169- Logging: 
+Removing client thread 18479 at 0
+22/Feb/2016 18:57:06,764- Logging: Properties file loaded
+22/Feb/2016 18:57:06,799- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+22/Feb/2016 18:57:06,800- Logging: 
+Waiting for a client ...
+22/Feb/2016 18:57:27,337- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18887,localport=13000]
+22/Feb/2016 18:57:27,344- Logging: 
+Waiting for a client ...
+22/Feb/2016 18:57:27,360- Logging: 
+18887 ERROR reading: client.Message
+22/Feb/2016 18:57:27,361- Logging: 
+Removing client thread 18887 at 0
+25/Feb/2016 15:13:25,007- Logging: Properties file loaded
+25/Feb/2016 15:13:25,052- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+25/Feb/2016 15:13:25,053- Logging: 
+Waiting for a client ...
+25/Feb/2016 15:13:43,874- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=23776,localport=13000]
+25/Feb/2016 15:13:43,880- Logging: 
+Waiting for a client ...
+25/Feb/2016 15:13:43,893- Logging: 
+23776 ERROR reading: client.Message
+25/Feb/2016 15:13:43,894- Logging: 
+Removing client thread 23776 at 0
+27/Feb/2016 01:55:35,630- Logging: Properties file loaded
+27/Feb/2016 01:55:35,663- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+27/Feb/2016 01:55:35,664- Logging: 
+Waiting for a client ...
+27/Feb/2016 01:55:49,293- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=5105,localport=13000]
+27/Feb/2016 01:55:49,302- Logging: 
+Waiting for a client ...
+27/Feb/2016 01:55:49,314- Logging: 
+5105 ERROR reading: client.Message
+27/Feb/2016 01:55:49,314- Logging: 
+Removing client thread 5105 at 0
+27/Feb/2016 02:11:52,656- Logging: Properties file loaded
+27/Feb/2016 02:11:52,672- Logging: Could not bind to port : 13000
+Retrying
+27/Feb/2016 02:11:52,673- Logging: Properties file loaded
+27/Feb/2016 02:11:52,691- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 5218
+27/Feb/2016 02:11:52,693- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:12:17,135- Logging: Properties file loaded
+27/Feb/2016 02:12:17,179- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+27/Feb/2016 02:12:17,181- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:12:36,161- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=5222,localport=13000]
+27/Feb/2016 02:12:36,168- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:12:36,182- Logging: 
+5222 ERROR reading: client.Message
+27/Feb/2016 02:12:36,182- Logging: 
+Removing client thread 5222 at 0
+27/Feb/2016 02:13:00,651- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=5225,localport=13000]
+27/Feb/2016 02:13:00,653- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:13:00,666- Logging: 
+5225 ERROR reading: client.Message
+27/Feb/2016 02:13:00,667- Logging: 
+Removing client thread 5225 at 0
+27/Feb/2016 02:20:07,143- Logging: Properties file loaded
+27/Feb/2016 02:20:07,177- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+27/Feb/2016 02:20:07,178- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:20:21,803- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=5452,localport=13000]
+27/Feb/2016 02:20:21,810- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:20:21,822- Logging: 
+5452 ERROR reading: client.Message
+27/Feb/2016 02:20:21,823- Logging: 
+Removing client thread 5452 at 0
+27/Feb/2016 02:22:07,231- Logging: Properties file loaded
+27/Feb/2016 02:22:07,263- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+27/Feb/2016 02:22:07,264- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:22:17,318- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=5466,localport=13000]
+27/Feb/2016 02:22:17,325- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:22:17,339- Logging: 
+5466 ERROR reading: com.socket.Message
+27/Feb/2016 02:22:17,339- Logging: 
+Removing client thread 5466 at 0
+27/Feb/2016 02:27:59,127- Logging: Properties file loaded
+27/Feb/2016 02:27:59,144- Logging: Could not bind to port : 13000
+Retrying
+27/Feb/2016 02:27:59,145- Logging: Properties file loaded
+27/Feb/2016 02:27:59,164- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 5505
+27/Feb/2016 02:27:59,166- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:28:23,475- Logging: Properties file loaded
+27/Feb/2016 02:28:23,509- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+27/Feb/2016 02:28:23,510- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:28:32,173- Logging: Properties file loaded
+27/Feb/2016 02:28:32,190- Logging: Could not bind to port : 13000
+Retrying
+27/Feb/2016 02:28:32,191- Logging: Properties file loaded
+27/Feb/2016 02:28:32,210- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 5509
+27/Feb/2016 02:28:32,211- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:29:10,000- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=5513,localport=13000]
+27/Feb/2016 02:29:10,007- Logging: 
+Waiting for a client ...
+27/Feb/2016 02:29:10,021- Logging: 
+5513 ERROR reading: client.Message
+27/Feb/2016 02:29:10,022- Logging: 
+Removing client thread 5513 at 0
+27/Feb/2016 02:36:55,832- Logging: Properties file loaded
+27/Feb/2016 02:36:55,862- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 13000
+27/Feb/2016 02:36:55,864- Logging: 
+Waiting for a client ...
+28/Feb/2016 03:31:32,870- Logging: Properties file loaded
+28/Feb/2016 03:31:32,887- Logging: Properties file loaded
+28/Feb/2016 03:31:43,487- Logging: Properties file loaded
+28/Feb/2016 03:31:57,657- Logging: 
+Server Thread 35300 running.
+28/Feb/2016 03:38:45,011- Logging: Properties file loaded
+28/Feb/2016 03:38:56,535- Logging: 
+Server Thread 35397 running.
+28/Feb/2016 03:40:32,094- Logging: Properties file loaded
+28/Feb/2016 03:40:39,502- Logging: 
+Server Thread 35423 running.
+28/Feb/2016 03:48:48,428- Logging: Properties file loaded
+28/Feb/2016 03:48:58,430- Logging: 
+Server Thread 35624 running.
+28/Feb/2016 03:57:17,744- Logging: Properties file loaded
+28/Feb/2016 03:57:17,762- Logging: Can not bind to port : 13000
+Retrying
+28/Feb/2016 03:57:17,763- Logging: Properties file loaded
+28/Feb/2016 03:57:17,781- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 35718
+28/Feb/2016 03:57:26,784- Logging: Properties file loaded
+28/Feb/2016 03:57:26,819- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+28/Feb/2016 04:00:11,920- Logging: 
+Server Thread 35732 running.
+28/Feb/2016 04:00:20,022- Logging: java.net.SocketException: socket closed
+28/Feb/2016 04:02:13,303- Logging: Properties file loaded
+28/Feb/2016 04:02:13,348- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+28/Feb/2016 04:02:20,455- Logging: 
+Server Thread 35761 running.
+
+28/Feb/2016 04:02:33,784- Logging: 
+Server Thread 35763 running.
+
+28/Feb/2016 04:06:09,544- Logging: Properties file loaded
+28/Feb/2016 04:06:09,578- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+28/Feb/2016 04:14:53,117- Logging: Properties file loaded
+28/Feb/2016 04:14:53,133- Logging: Can not bind to port : 13000
+Retrying
+
+28/Feb/2016 04:14:53,134- Logging: Properties file loaded
+28/Feb/2016 04:14:53,153- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 35936
+28/Feb/2016 04:15:17,342- Logging: Properties file loaded
+28/Feb/2016 04:15:17,381- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+28/Feb/2016 04:15:26,356- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=35945,localport=13000]
+28/Feb/2016 04:15:26,363- Logging: 
+Server Thread 35945 running.
+
+28/Feb/2016 04:15:58,967- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=35949,localport=13000]
+28/Feb/2016 04:15:58,970- Logging: 
+Server Thread 35949 running.
+
+28/Feb/2016 04:16:04,352- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=35951,localport=13000]
+28/Feb/2016 04:16:04,355- Logging: 
+Server Thread 35951 running.
+
+28/Feb/2016 04:45:27,891- Logging: Properties file loaded
+28/Feb/2016 04:45:27,927- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+28/Feb/2016 04:45:35,600- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=36309,localport=13000]
+28/Feb/2016 04:45:35,606- Logging: 
+Server Thread 36309 running.
+
+28/Feb/2016 04:45:50,059- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=36313,localport=13000]
+28/Feb/2016 04:45:50,061- Logging: 
+Server Thread 36313 running.
+

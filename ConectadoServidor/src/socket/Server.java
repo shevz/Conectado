@@ -1,3 +1,8 @@
+//Advanced Programming April 2016
+//University of Technology
+//Shevaun Mckenzie, C'Lloyd Walker, Dwayne Bryan,Andrew Gray,Romone Rose
+
+package socket;
 
 import java.io.*;
 import java.net.*;
@@ -13,7 +18,10 @@ class ServerThread extends Thread {
 	public String username = "";
 	public ObjectInputStream streamIn = null;
 	public ObjectOutputStream streamOut = null;
-	private volatile boolean running = true; //to end a thread properly--TODO: need to comment this better
+	private volatile boolean running = true; // this boolean is used in efforts
+												// to try end a thread
+												// properly rather than using
+												// deprecated code.
 
 	public ServerThread(Server _server, Socket _socket) {
 		super();
@@ -27,7 +35,11 @@ class ServerThread extends Thread {
 			streamOut.writeObject(msg);
 			streamOut.flush();
 		} catch (IOException ex) {
-			System.out.println("Exception [SocketClient : send(...)]");
+			System.out.println("Exception [SocketClient : send(...)]\n");
+			Logging.getLogger().error("Exception [SocketClient : send(...)]\n" + ex.toString());
+		} catch (Exception e) {
+			e.printStackTrace();
+			Logging.getLogger().error(e);
 		}
 	}
 
@@ -36,13 +48,15 @@ class ServerThread extends Thread {
 	}
 
 	public void run() {
-		System.out.println("\nServer Thread " + ID + " running.");
+		System.out.println("\nServer Thread " + ID + " running.\n");
+		Logging.getLogger().info("\nServer Thread " + ID + " running.\n");
 		while (running) {
 			try {
 				Message msg = (Message) streamIn.readObject();
 				server.handle(ID, msg);
 			} catch (Exception ioe) {
 				System.out.println(ID + " ERROR reading: " + ioe.getMessage());
+				Logging.getLogger().error(ioe);
 				server.remove(ID);
 				running = false;
 			}
@@ -62,7 +76,6 @@ class ServerThread extends Thread {
 			streamIn.close();
 		if (streamOut != null)
 			streamOut.close();
-		running = false;
 	}
 }
 
@@ -72,8 +85,9 @@ public class Server implements Runnable {
 	public ServerSocket server = null;
 	public Thread thread = null;
 	private utilities.Props prop = new utilities.Props();
-	private Properties props = prop.getProps();
-	public int clientCount = 0, port = Integer.parseInt(props.getProperty("portNumber"));
+	private Properties props = prop.getProps(); //
+	public int port = Integer.parseInt(props.getProperty("portNumber"));
+	public int clientCount = 0;
 	public Database db;
 	private String filePath = props.getProperty("dbPath");
 
@@ -85,16 +99,19 @@ public class Server implements Runnable {
 		try {
 			server = new ServerSocket(port);
 			port = server.getLocalPort();
-			System.out.println(
-					"Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
+			System.out.println("Server started on IP : " + InetAddress.getLocalHost() + ", Port : "
+					+ server.getLocalPort() + "\n");
 			Logging.getLogger()
-					.info("Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
+					.info("Server started on IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
 			start();
 		} catch (IOException ioe) {
-			System.out.println("Could not bind to port : " + port + "\nRetrying");
-			Logging.getLogger().error("Could not bind to port : " + port + "\nRetrying");
-			RetryStart(0); // when 0 passes through it tell the program to take
-							// any available port
+			System.out.println("Can not bind to port : " + port + "\nRetrying\n");
+			Logging.getLogger().error("Can not bind to port : " + port + "\nRetrying\n");
+			RetryStart(0);// retries but this time selects a random open port
+							// and uses it
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			Logging.getLogger().error(ex);
 		}
 	}
 
@@ -113,8 +130,11 @@ public class Server implements Runnable {
 					.info("Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
 			start();
 		} catch (IOException ioe) {
-			System.out.println("\nCould not bind to port " + port + ": " + ioe.getMessage());
-			Logging.getLogger().error("Could not bind to port : " + port + "\nRetrying");
+			System.out.println("\nCan not bind to port " + port + ": " + ioe.getMessage());
+			Logging.getLogger().error("\nCan not bind to port " + port + ": " + ioe.getMessage());
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			Logging.getLogger().error(ex);
 		}
 	}
 
@@ -125,7 +145,7 @@ public class Server implements Runnable {
 				addThread(server.accept());
 			} catch (Exception ioe) {
 				System.out.println("\nServer accept error: \n");
-				Logging.getLogger().error("\nServer accept error: \nRetrying");
+				Logging.getLogger().error("\nServer accept error: \n");
 				RetryStart(0);
 			}
 		}
@@ -140,6 +160,7 @@ public class Server implements Runnable {
 
 	public void stop() {
 		if (thread != null) {
+			// thread.stop();
 			thread = null;
 		}
 	}
@@ -181,10 +202,7 @@ public class Server implements Runnable {
 			} else if (msg.type.equals("test")) {
 				clients[findClient(ID)].send(new Message("test", "SERVER", "OK", msg.sender));
 			} else if (msg.type.equals("group")) {
-				// TODO: overload the message class
-				// findGroupThread(msg.type, msg.sender, msg.content,msg.recipient));
-				SendGroupList(msg.type,msg.sender, msg.content, msg.group);
-				//TODO: check if the above line is working
+				SendGroupList(msg.type, msg.sender, msg.content, msg.group);
 			} else if (msg.type.equals("signup")) {
 				if (findUserThread(msg.sender) == null) {
 					if (!db.userExists(msg.sender)) {
@@ -219,17 +237,29 @@ public class Server implements Runnable {
 			}
 		}
 	}
-
+	
+	//used to send broadcast messages
 	public void Announce(String type, String sender, String content) {
 		Message msg = new Message(type, sender, content, "All");
 		for (int i = 0; i < clientCount; i++) {
 			clients[i].send(msg);
 		}
 	}
-
+	
+	//
 	public void SendUserList(String toWhom) {
 		for (int i = 0; i < clientCount; i++) {
 			findUserThread(toWhom).send(new Message("newuser", "SERVER", clients[i].username, toWhom));
+		}
+	}
+
+	// used to send messages to groups by looping through the individuals in the
+	// group
+	public void SendGroupList(String type, String sender, String content, String[] toWhom) {
+		for (int i = 0; i < toWhom.length; i++) {
+			for (int j = 0; j < clientCount; j++) {
+				findUserThread(toWhom[i]).send(new Message(type, sender, clients[j].username, toWhom[i]));
+			}
 		}
 	}
 
@@ -241,21 +271,14 @@ public class Server implements Runnable {
 		}
 		return null;
 	}
-	
-	public void SendGroupList(String type, String sender, String content, String[] toWhom) {
-		for (int i = 0; i < toWhom.length; i++) {
-			for (int j = 0; j < clientCount; j++) {
-				findUserThread(toWhom[i]).send(new Message("newuser", sender, clients[j].username, toWhom[i]));
-			}
-		}
-	}
 
 	@SuppressWarnings("deprecation")
 	public synchronized void remove(int ID) {
 		int pos = findClient(ID);
 		if (pos >= 0) {
 			ServerThread toTerminate = clients[pos];
-			System.out.println("\nRemoving client thread " + ID + " at " + pos);
+			System.out.println("\nRemoving client thread " + ID + " at " + pos + "\n");
+			Logging.getLogger().info("\nRemoving client thread " + ID + " at " + pos);
 			if (pos < clientCount - 1) {
 				for (int i = pos + 1; i < clientCount; i++) {
 					clients[i - 1] = clients[i];
@@ -265,24 +288,32 @@ public class Server implements Runnable {
 			try {
 				toTerminate.close();
 			} catch (IOException ioe) {
-				System.out.println("\nError closing thread: " + ioe);
+				System.out.println("\nError closing thread: " + ioe + "\n");
 				Logging.getLogger().error("\nError closing thread: " + ioe);
+			} catch (Exception ex) {
+				ex.printStackTrace();
+				Logging.getLogger().error(ex);
 			}
 			toTerminate.stop();
+			// toTerminate=null;
 		}
 	}
 
 	private void addThread(Socket socket) {
 		if (clientCount < clients.length) {
-			System.out.println("\nClient accepted: " + socket);
+			System.out.println("\nClient accepted: " + socket + "\n");
+			Logging.getLogger().info("\nClient accepted: " + socket);
 			clients[clientCount] = new ServerThread(this, socket);
 			try {
 				clients[clientCount].open();
 				clients[clientCount].start();
 				clientCount++;
 			} catch (IOException ioe) {
-				System.out.println("\nError opening thread: " + ioe);
+				System.out.println("\nError opening thread: " + ioe + "\n");
 				Logging.getLogger().error("\nError opening thread: " + ioe);
+			} catch (Exception e) {
+				e.printStackTrace();
+				Logging.getLogger().error(e);
 			}
 		} else {
 			System.out.println("\nClient refused: maximum " + clients.length + " reached.");
@@ -300,5 +331,4 @@ public class Server implements Runnable {
 	public static void main(String args[]) {
 		new Server();
 	}
-
 }

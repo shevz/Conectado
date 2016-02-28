@@ -1,5 +1,5 @@
+package socket;
 import java.io.Serializable;
-import java.util.Arrays;
 
 public class Message implements Serializable{
     
@@ -19,13 +19,12 @@ public class Message implements Serializable{
         this.type = type; 
         this.sender = sender; 
         this.content = content; 
-        this.group = recipients;
-        this.recipient=null;
+        this.recipient = null;
+        this.group=recipients;
     }
     
     @Override
-	public String toString() {
-		return "Message [type=" + type + ", sender=" + sender + ", content=" + content + ", recipient=" + recipient
-				+ ", group=" + Arrays.toString(group) + "]";
-	}
+    public String toString(){
+        return "{type='"+type+"', sender='"+sender+"', content='"+content+"', recipient='"+recipient+"'}";
+    }
 }
