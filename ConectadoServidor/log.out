@@ -307,3 +307,8 @@ Client accepted: Socket[addr=/127.0.0.1,port=36313,localport=13000]
 28/Feb/2016 04:45:50,061- Logging: 
 Server Thread 36313 running.
 
+29/Feb/2016 15:32:02,798- Logging: 
+Removing client thread 36313 at 1
+04/Mar/2016 06:12:33,939- Logging: java.net.SocketException: Connection reset
+04/Mar/2016 06:12:33,989- Logging: 
+Removing client thread 36309 at 0

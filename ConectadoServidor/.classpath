@@ -4,5 +4,8 @@
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="C:/Users/Shevaun/git/ConectadoServidor/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Shevaun/git/ConectadoServidor/lib/sbc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Shevaun/git/ConectadoServidor/lib/server.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Shevaun/git/ConectadoServidor/lib/sip.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
