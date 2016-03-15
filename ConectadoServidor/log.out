@@ -312,3 +312,141 @@ Removing client thread 36313 at 1
 04/Mar/2016 06:12:33,939- Logging: java.net.SocketException: Connection reset
 04/Mar/2016 06:12:33,989- Logging: 
 Removing client thread 36309 at 0
+12/Mar/2016 23:13:52,120- Logging: Properties file loaded
+12/Mar/2016 23:13:52,204- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+12/Mar/2016 23:14:24,362- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=42731,localport=13000]
+12/Mar/2016 23:14:24,368- Logging: 
+Server Thread 42731 running.
+
+12/Mar/2016 23:14:42,614- Logging: 
+Removing client thread 42731 at 0
+12/Mar/2016 23:18:14,174- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=42733,localport=13000]
+12/Mar/2016 23:18:14,175- Logging: 
+Server Thread 42733 running.
+
+12/Mar/2016 23:18:56,181- Logging: 
+Removing client thread 42733 at 0
+13/Mar/2016 03:57:25,319- Logging: Properties file loaded
+13/Mar/2016 04:00:29,427- Logging: Properties file loaded
+13/Mar/2016 04:00:29,442- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+14/Mar/2016 23:39:10,974- Logging: Properties file loaded
+14/Mar/2016 23:39:10,993- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+14/Mar/2016 23:39:22,854- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=38386,localport=13000]
+14/Mar/2016 23:39:22,857- Logging: 
+Server Thread 38386 running.
+
+14/Mar/2016 23:39:48,983- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=38389,localport=13000]
+14/Mar/2016 23:39:48,984- Logging: 
+Server Thread 38389 running.
+
+14/Mar/2016 23:40:28,424- Logging: 
+Removing client thread 38386 at 0
+14/Mar/2016 23:40:29,865- Logging: 
+Removing client thread 38389 at 0
+14/Mar/2016 23:49:19,611- Logging: Properties file loaded
+14/Mar/2016 23:49:19,617- Logging: Can not bind to port : 13000
+Retrying
+
+14/Mar/2016 23:49:19,618- Logging: Properties file loaded
+14/Mar/2016 23:49:19,626- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 38471
+14/Mar/2016 23:49:40,189- Logging: Properties file loaded
+14/Mar/2016 23:49:40,202- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+14/Mar/2016 23:49:47,150- Logging: Properties file loaded
+14/Mar/2016 23:49:47,162- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+14/Mar/2016 23:50:01,171- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=38473,localport=13000]
+14/Mar/2016 23:50:01,174- Logging: 
+Server Thread 38473 running.
+
+14/Mar/2016 23:51:14,699- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=38476,localport=13000]
+14/Mar/2016 23:51:14,700- Logging: 
+Server Thread 38476 running.
+
+14/Mar/2016 23:51:42,961- Logging: 
+Removing client thread 38473 at 0
+14/Mar/2016 23:51:46,685- Logging: 
+Removing client thread 38476 at 0
+14/Mar/2016 23:51:50,803- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=38478,localport=13000]
+14/Mar/2016 23:51:50,805- Logging: 
+Server Thread 38478 running.
+
+14/Mar/2016 23:52:06,312- Logging: 
+Removing client thread 38478 at 0
+15/Mar/2016 01:07:02,741- Logging: Properties file loaded
+15/Mar/2016 01:07:02,743- Logging: Properties file loaded
+15/Mar/2016 01:07:02,763- Logging: Properties file loaded
+15/Mar/2016 01:07:02,764- Logging: Properties file loaded
+15/Mar/2016 01:07:02,772- Logging: javax.xml.transform.TransformerException: java.io.FileNotFoundException: C:\Data.xml (Access is denied)
+15/Mar/2016 01:07:02,783- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+15/Mar/2016 01:09:06,800- Logging: Properties file loaded
+15/Mar/2016 01:09:06,802- Logging: Properties file loaded
+15/Mar/2016 01:09:06,819- Logging: Properties file loaded
+15/Mar/2016 01:09:06,820- Logging: Properties file loaded
+15/Mar/2016 01:09:06,827- Logging: javax.xml.transform.TransformerException: java.io.FileNotFoundException: C:\Data.xml (Access is denied)
+15/Mar/2016 01:09:06,831- Logging: Can not bind to port : 13000
+Retrying
+
+15/Mar/2016 01:09:06,831- Logging: Properties file loaded
+15/Mar/2016 01:09:06,832- Logging: Properties file loaded
+15/Mar/2016 01:09:06,833- Logging: Properties file loaded
+15/Mar/2016 01:09:06,834- Logging: Properties file loaded
+15/Mar/2016 01:09:06,834- Logging: javax.xml.transform.TransformerException: java.io.FileNotFoundException: C:\Data.xml (Access is denied)
+15/Mar/2016 01:09:06,842- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 39181
+15/Mar/2016 01:10:27,289- Logging: Properties file loaded
+15/Mar/2016 01:10:27,291- Logging: Properties file loaded
+15/Mar/2016 01:10:27,308- Logging: Properties file loaded
+15/Mar/2016 01:10:27,309- Logging: Properties file loaded
+15/Mar/2016 01:10:27,315- Logging: javax.xml.transform.TransformerException: java.io.FileNotFoundException: C:\XML\data.xml (The system cannot find the path specified)
+15/Mar/2016 01:10:27,328- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+15/Mar/2016 01:10:54,723- Logging: Properties file loaded
+15/Mar/2016 01:10:54,725- Logging: Properties file loaded
+15/Mar/2016 01:10:54,743- Logging: Properties file loaded
+15/Mar/2016 01:10:54,745- Logging: Properties file loaded
+15/Mar/2016 01:10:54,751- Logging: javax.xml.transform.TransformerException: java.io.FileNotFoundException: C:\Users\Shevaun\git\ConectadoServidor\.\XML\data.xml (The system cannot find the path specified)
+15/Mar/2016 01:10:54,756- Logging: Can not bind to port : 13000
+Retrying
+
+15/Mar/2016 01:10:54,756- Logging: Properties file loaded
+15/Mar/2016 01:10:54,756- Logging: Properties file loaded
+15/Mar/2016 01:10:54,758- Logging: Properties file loaded
+15/Mar/2016 01:10:54,758- Logging: Properties file loaded
+15/Mar/2016 01:10:54,759- Logging: javax.xml.transform.TransformerException: java.io.FileNotFoundException: C:\Users\Shevaun\git\ConectadoServidor\.\XML\data.xml (The system cannot find the path specified)
+15/Mar/2016 01:10:54,766- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 39184
+15/Mar/2016 01:11:18,898- Logging: Properties file loaded
+15/Mar/2016 01:11:18,899- Logging: Properties file loaded
+15/Mar/2016 01:11:18,917- Logging: Properties file loaded
+15/Mar/2016 01:11:18,919- Logging: Properties file loaded
+15/Mar/2016 01:11:18,976- Logging: Can not bind to port : 13000
+Retrying
+
+15/Mar/2016 01:11:18,976- Logging: Properties file loaded
+15/Mar/2016 01:11:18,977- Logging: Properties file loaded
+15/Mar/2016 01:11:18,987- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 39185
+15/Mar/2016 01:15:34,053- Logging: Properties file loaded
+15/Mar/2016 01:15:34,055- Logging: Properties file loaded
+15/Mar/2016 01:15:34,072- Logging: Properties file loaded
+15/Mar/2016 01:15:34,074- Logging: Properties file loaded
+15/Mar/2016 01:15:34,120- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+15/Mar/2016 01:16:53,568- Logging: Properties file loaded
+15/Mar/2016 01:16:53,570- Logging: Properties file loaded
+15/Mar/2016 01:16:53,602- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+15/Mar/2016 01:17:27,755- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=39196,localport=13000]
+15/Mar/2016 01:17:27,758- Logging: 
+Server Thread 39196 running.
+
+15/Mar/2016 01:18:00,548- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=39198,localport=13000]
+15/Mar/2016 01:18:00,549- Logging: 
+Server Thread 39198 running.
+
+15/Mar/2016 01:18:48,798- Logging: 
+Removing client thread 39196 at 0
+15/Mar/2016 01:18:52,357- Logging: 
+Removing client thread 39198 at 0

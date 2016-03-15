@@ -10,78 +10,10 @@ import java.util.Properties;
 
 import utilities.Logging;
 
-class ServerThread extends Thread {
-
-	public Server server = null;
-	public Socket socket = null;
-	public int ID = -1;
-	public String username = "";
-	public ObjectInputStream streamIn = null;
-	public ObjectOutputStream streamOut = null;
-	private volatile boolean running = true; // this boolean is used in efforts
-												// to try end a thread
-												// properly rather than using
-												// deprecated code.
-
-	public ServerThread(Server _server, Socket _socket) {
-		super();
-		server = _server;
-		socket = _socket;
-		ID = socket.getPort();
-	}
-
-	public void send(Message msg) {
-		try {
-			streamOut.writeObject(msg);
-			streamOut.flush();
-		} catch (IOException ex) {
-			System.out.println("Exception [SocketClient : send(...)]\n");
-			Logging.getLogger().error("Exception [SocketClient : send(...)]\n" + ex.toString());
-		} catch (Exception e) {
-			e.printStackTrace();
-			Logging.getLogger().error(e);
-		}
-	}
-
-	public int getID() {
-		return ID;
-	}
-
-	public void run() {
-		System.out.println("\nServer Thread " + ID + " running.\n");
-		Logging.getLogger().info("\nServer Thread " + ID + " running.\n");
-		while (running) {
-			try {
-				Message msg = (Message) streamIn.readObject();
-				server.handle(ID, msg);
-			} catch (Exception ioe) {
-				System.out.println(ID + " ERROR reading: " + ioe.getMessage());
-				Logging.getLogger().error(ioe);
-				server.remove(ID);
-				running = false;
-			}
-		}
-	}
-
-	public void open() throws IOException {
-		streamOut = new ObjectOutputStream(socket.getOutputStream());
-		streamOut.flush();
-		streamIn = new ObjectInputStream(socket.getInputStream());
-	}
-
-	public void close() throws IOException {
-		if (socket != null)
-			socket.close();
-		if (streamIn != null)
-			streamIn.close();
-		if (streamOut != null)
-			streamOut.close();
-	}
-}
 
 public class Server implements Runnable {
 
-	public ServerThread clients[];
+	public ServerClientThread clients[];
 	public ServerSocket server = null;
 	public Thread thread = null;
 	private utilities.Props prop = new utilities.Props();
@@ -93,12 +25,11 @@ public class Server implements Runnable {
 
 	public Server() {
 
-		clients = new ServerThread[50];
+		clients = new ServerClientThread[50];
 		db = new Database(filePath);
 
 		try {
 			server = new ServerSocket(port);
-			port = server.getLocalPort();
 			System.out.println("Server started on IP : " + InetAddress.getLocalHost() + ", Port : "
 					+ server.getLocalPort() + "\n");
 			Logging.getLogger()
@@ -117,13 +48,12 @@ public class Server implements Runnable {
 
 	public Server(int Port) {
 
-		clients = new ServerThread[50];
+		clients = new ServerClientThread[50];
 		port = Port;
 		db = new Database(filePath);
 
 		try {
 			server = new ServerSocket(port);
-			port = server.getLocalPort();
 			System.out.println(
 					"Server startet. IP : " + InetAddress.getLocalHost() + ", Port : " + server.getLocalPort());
 			Logging.getLogger()
@@ -263,7 +193,7 @@ public class Server implements Runnable {
 		}
 	}
 
-	public ServerThread findUserThread(String usr) {
+	public ServerClientThread findUserThread(String usr) {
 		for (int i = 0; i < clientCount; i++) {
 			if (clients[i].username.equals(usr)) {
 				return clients[i];
@@ -276,7 +206,7 @@ public class Server implements Runnable {
 	public synchronized void remove(int ID) {
 		int pos = findClient(ID);
 		if (pos >= 0) {
-			ServerThread toTerminate = clients[pos];
+			ServerClientThread toTerminate = clients[pos];
 			System.out.println("\nRemoving client thread " + ID + " at " + pos + "\n");
 			Logging.getLogger().info("\nRemoving client thread " + ID + " at " + pos);
 			if (pos < clientCount - 1) {
@@ -303,7 +233,7 @@ public class Server implements Runnable {
 		if (clientCount < clients.length) {
 			System.out.println("\nClient accepted: " + socket + "\n");
 			Logging.getLogger().info("\nClient accepted: " + socket);
-			clients[clientCount] = new ServerThread(this, socket);
+			clients[clientCount] = new ServerClientThread(this, socket);
 			try {
 				clients[clientCount].open();
 				clients[clientCount].start();

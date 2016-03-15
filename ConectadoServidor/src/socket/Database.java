@@ -9,12 +9,48 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.*;
 
+import utilities.Logging;
+
 public class Database {
     
     public String filePath;
+    private utilities.Props prop = new utilities.Props();
     
     public Database(String filePath){
-        this.filePath = filePath;
+    	System.out.println("this is the file path"+filePath);
+    	this.filePath = filePath;
+    	checkIfFileExist();
+    }
+    
+    public void checkIfFileExist(){
+    	if(!userExists(prop.getProps().getProperty("defaultUser"))){
+    		try{
+    			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+	            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+	            Document doc = dBuilder.newDocument();
+	            
+	            Element user = doc.createElement("user");
+	            doc.appendChild(user);
+	            
+	            Element newusername = doc.createElement("username"); 
+	            newusername.appendChild(doc.createTextNode(prop.getProps().getProperty("defaultUser")));
+	            user.appendChild(newusername);
+	            
+	            Element newuserpassword = doc.createElement("password"); 
+	            newuserpassword.appendChild(doc.createTextNode(prop.getProps().getProperty("defaultCred")));
+	            user.appendChild(newuserpassword);
+	            	         
+	            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+	            Transformer transformer = transformerFactory.newTransformer();
+	            DOMSource source = new DOMSource(doc);
+	            StreamResult result = new StreamResult(new File(filePath));
+	            
+	            transformer.transform(source, result);
+	            
+    		}catch(Exception ex){
+    			Logging.getLogger().error(ex);
+    		}
+    	}
     }
     
     public boolean userExists(String username){
@@ -72,6 +108,7 @@ public class Database {
         }
         catch(Exception ex){
             System.out.println("Database exception : userExists()");
+            Logging.getLogger().error(ex);
             return false;
         }
     }
@@ -100,6 +137,7 @@ public class Database {
 	   } 
            catch(Exception ex){
 		System.out.println("Exceptionmodify xml");
+		Logging.getLogger().error(ex);
 	   }
 	}
     
