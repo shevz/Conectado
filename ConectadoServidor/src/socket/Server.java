@@ -4,12 +4,15 @@
 
 package socket;
 
-import java.io.*;
-import java.net.*;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.util.Properties;
 
+import sip.Vsjtalk;
+import utilities.DBConnectorFactory;
 import utilities.Logging;
-
 
 public class Server implements Runnable {
 
@@ -21,12 +24,13 @@ public class Server implements Runnable {
 	public int port = Integer.parseInt(props.getProperty("portNumber"));
 	public int clientCount = 0;
 	public Database db;
-	private String filePath = props.getProperty("dbPath");
+	private String filePath = props.getProperty("dbPath");	
 
 	public Server() {
 
 		clients = new ServerClientThread[50];
 		db = new Database(filePath);
+		DBConnectorFactory.checkForDB();
 
 		try {
 			server = new ServerSocket(port);
@@ -38,7 +42,7 @@ public class Server implements Runnable {
 		} catch (IOException ioe) {
 			System.out.println("Can not bind to port : " + port + "\nRetrying\n");
 			Logging.getLogger().error("Can not bind to port : " + port + "\nRetrying\n");
-			RetryStart(0);// retries but this time selects a random open port
+			retryStart(0);// retries but this time selects a random open port
 							// and uses it
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -76,7 +80,7 @@ public class Server implements Runnable {
 			} catch (Exception ioe) {
 				System.out.println("\nServer accept error: \n");
 				Logging.getLogger().error("\nServer accept error: \n");
-				RetryStart(0);
+				retryStart(0);
 			}
 		}
 	}
@@ -106,16 +110,17 @@ public class Server implements Runnable {
 
 	public synchronized void handle(int ID, Message msg) {
 		if (msg.content.equals(".bye")) {
-			Announce("signout", "SERVER", msg.sender);
-			remove(ID);
+			broadcast("signout", "SERVER", msg.sender);
+			removeUser(ID);
 		} else {
 			if (msg.type.equals("login")) {
 				if (findUserThread(msg.sender) == null) {
-					if (db.checkLogin(msg.sender, msg.content)) {
+					// if (db.checkLogin(msg.sender, msg.content)) {
+					if (Auth.auth_login(msg.sender, msg.content)) {
 						clients[findClient(ID)].username = msg.sender;
 						clients[findClient(ID)].send(new Message("login", "SERVER", "TRUE", msg.sender));
-						Announce("newuser", "SERVER", msg.sender);
-						SendUserList(msg.sender);
+						broadcast("newuser", "SERVER", msg.sender);
+						sendOnlineList(msg.sender);
 					} else {
 						clients[findClient(ID)].send(new Message("login", "SERVER", "FALSE", msg.sender));
 					}
@@ -124,7 +129,7 @@ public class Server implements Runnable {
 				}
 			} else if (msg.type.equals("message")) {
 				if (msg.recipient.equals("All")) {
-					Announce("message", msg.sender, msg.content);
+					broadcast("message", msg.sender, msg.content);
 				} else {
 					findUserThread(msg.recipient).send(new Message(msg.type, msg.sender, msg.content, msg.recipient));
 					clients[findClient(ID)].send(new Message(msg.type, msg.sender, msg.content, msg.recipient));
@@ -132,16 +137,25 @@ public class Server implements Runnable {
 			} else if (msg.type.equals("test")) {
 				clients[findClient(ID)].send(new Message("test", "SERVER", "OK", msg.sender));
 			} else if (msg.type.equals("group")) {
-				SendGroupList(msg.type, msg.sender, msg.content, msg.group);
+				sendGroupMessage(msg.type, msg.sender, msg.content, msg.group);
+			} else if (msg.type.equals("voice")) {
+
+				String IP = findUserThread(msg.sender).socket.getInetAddress().getHostAddress();
+				System.out.println("The IP address from using find user thread :" + IP);
+				// Session meNuhKnow;
+				Vsjtalk talk = new Vsjtalk(IP);
+				talk.startPhone();
+				System.out.println("phone started");
 			} else if (msg.type.equals("signup")) {
 				if (findUserThread(msg.sender) == null) {
 					if (!db.userExists(msg.sender)) {
-						db.addUser(msg.sender, msg.content);
+						//db.addUser(msg.sender, msg.content);
+						Auth.create(msg.sender, msg.content);
 						clients[findClient(ID)].username = msg.sender;
 						clients[findClient(ID)].send(new Message("signup", "SERVER", "TRUE", msg.sender));
 						clients[findClient(ID)].send(new Message("login", "SERVER", "TRUE", msg.sender));
-						Announce("newuser", "SERVER", msg.sender);
-						SendUserList(msg.sender);
+						broadcast("newuser", "SERVER", msg.sender);
+						sendOnlineList(msg.sender);
 					} else {
 						clients[findClient(ID)].send(new Message("signup", "SERVER", "FALSE", msg.sender));
 					}
@@ -167,17 +181,17 @@ public class Server implements Runnable {
 			}
 		}
 	}
-	
-	//used to send broadcast messages
-	public void Announce(String type, String sender, String content) {
+
+	// used to send broadcast messages
+	public void broadcast(String type, String sender, String content) {
 		Message msg = new Message(type, sender, content, "All");
 		for (int i = 0; i < clientCount; i++) {
 			clients[i].send(msg);
 		}
 	}
-	
+
 	//
-	public void SendUserList(String toWhom) {
+	public void sendOnlineList(String toWhom) {
 		for (int i = 0; i < clientCount; i++) {
 			findUserThread(toWhom).send(new Message("newuser", "SERVER", clients[i].username, toWhom));
 		}
@@ -185,7 +199,7 @@ public class Server implements Runnable {
 
 	// used to send messages to groups by looping through the individuals in the
 	// group
-	public void SendGroupList(String type, String sender, String content, String[] toWhom) {
+	public void sendGroupMessage(String type, String sender, String content, String[] toWhom) {
 		for (int i = 0; i < toWhom.length; i++) {
 			for (int j = 0; j < clientCount; j++) {
 				findUserThread(toWhom[i]).send(new Message(type, sender, clients[j].username, toWhom[i]));
@@ -202,8 +216,30 @@ public class Server implements Runnable {
 		return null;
 	}
 
+	private void addThread(Socket socket) {
+		if (clientCount < clients.length) {
+			System.out.println("\nClient accepted: " + socket + "\n");
+			Logging.getLogger().info("\nClient accepted: " + socket);
+			clients[clientCount] = new ServerClientThread(this, socket);
+			try {
+				clients[clientCount].open();
+				clients[clientCount].start();
+				clientCount++;
+			} catch (IOException ioe) {
+				System.out.println("\nError opening thread: " + ioe + "\n");
+				Logging.getLogger().error("\nError opening thread: " + ioe);
+			} catch (Exception e) {
+				e.printStackTrace();
+				Logging.getLogger().error(e);
+			}
+		} else {
+			System.out.println("\nClient refused: maximum " + clients.length + " reached.");
+			Logging.getLogger().info("\nClient refused: maximum " + clients.length + " reached.");
+		}
+	}
+
 	@SuppressWarnings("deprecation")
-	public synchronized void remove(int ID) {
+	public synchronized void removeUser(int ID) {
 		int pos = findClient(ID);
 		if (pos >= 0) {
 			ServerClientThread toTerminate = clients[pos];
@@ -229,29 +265,7 @@ public class Server implements Runnable {
 		}
 	}
 
-	private void addThread(Socket socket) {
-		if (clientCount < clients.length) {
-			System.out.println("\nClient accepted: " + socket + "\n");
-			Logging.getLogger().info("\nClient accepted: " + socket);
-			clients[clientCount] = new ServerClientThread(this, socket);
-			try {
-				clients[clientCount].open();
-				clients[clientCount].start();
-				clientCount++;
-			} catch (IOException ioe) {
-				System.out.println("\nError opening thread: " + ioe + "\n");
-				Logging.getLogger().error("\nError opening thread: " + ioe);
-			} catch (Exception e) {
-				e.printStackTrace();
-				Logging.getLogger().error(e);
-			}
-		} else {
-			System.out.println("\nClient refused: maximum " + clients.length + " reached.");
-			Logging.getLogger().info("\nClient refused: maximum " + clients.length + " reached.");
-		}
-	}
-
-	public void RetryStart(int port) {
+	public void retryStart(int port) {
 		if (this != null) {
 			this.stop();
 		}

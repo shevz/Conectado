@@ -450,3 +450,690 @@ Server Thread 39198 running.
 Removing client thread 39196 at 0
 15/Mar/2016 01:18:52,357- Logging: 
 Removing client thread 39198 at 0
+05/Apr/2016 03:13:59,924- Logging: Properties file loaded
+05/Apr/2016 03:13:59,926- Logging: Properties file loaded
+05/Apr/2016 03:13:59,965- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 03:14:20,882- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=6666,localport=13000]
+05/Apr/2016 03:14:20,886- Logging: 
+Server Thread 6666 running.
+
+05/Apr/2016 03:14:48,557- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=6671,localport=13000]
+05/Apr/2016 03:14:48,558- Logging: 
+Server Thread 6671 running.
+
+05/Apr/2016 03:16:45,691- Logging: java.net.SocketException: Connection reset
+05/Apr/2016 03:16:45,691- Logging: 
+Removing client thread 6666 at 0
+05/Apr/2016 03:19:36,799- Logging: Properties file loaded
+05/Apr/2016 03:19:36,802- Logging: Properties file loaded
+05/Apr/2016 03:19:36,835- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 03:19:49,344- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=6735,localport=13000]
+05/Apr/2016 03:19:49,348- Logging: 
+Server Thread 6735 running.
+
+05/Apr/2016 03:20:02,108- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=6736,localport=13000]
+05/Apr/2016 03:20:02,110- Logging: 
+Server Thread 6736 running.
+
+05/Apr/2016 03:23:23,953- Logging: Properties file loaded
+05/Apr/2016 03:23:23,955- Logging: Properties file loaded
+05/Apr/2016 03:23:23,986- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 03:23:32,885- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=6792,localport=13000]
+05/Apr/2016 03:23:32,888- Logging: 
+Server Thread 6792 running.
+
+05/Apr/2016 03:23:44,508- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=6793,localport=13000]
+05/Apr/2016 03:23:44,510- Logging: 
+Server Thread 6793 running.
+
+05/Apr/2016 04:00:58,837- Logging: Properties file loaded
+05/Apr/2016 04:00:58,840- Logging: Properties file loaded
+05/Apr/2016 04:00:58,873- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 04:01:14,125- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=7291,localport=13000]
+05/Apr/2016 04:01:14,128- Logging: 
+Server Thread 7291 running.
+
+05/Apr/2016 04:01:27,816- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=7294,localport=13000]
+05/Apr/2016 04:01:27,817- Logging: 
+Server Thread 7294 running.
+
+05/Apr/2016 04:16:58,729- Logging: Properties file loaded
+05/Apr/2016 04:16:58,731- Logging: Properties file loaded
+05/Apr/2016 04:16:58,766- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 04:17:11,366- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=7541,localport=13000]
+05/Apr/2016 04:17:11,369- Logging: 
+Server Thread 7541 running.
+
+05/Apr/2016 04:17:25,209- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=7559,localport=13000]
+05/Apr/2016 04:17:25,210- Logging: 
+Server Thread 7559 running.
+
+05/Apr/2016 04:19:31,285- Logging: Properties file loaded
+05/Apr/2016 04:19:31,287- Logging: Properties file loaded
+05/Apr/2016 04:19:31,317- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 04:19:44,730- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=7589,localport=13000]
+05/Apr/2016 04:19:44,734- Logging: 
+Server Thread 7589 running.
+
+05/Apr/2016 04:20:01,277- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=7591,localport=13000]
+05/Apr/2016 04:20:01,279- Logging: 
+Server Thread 7591 running.
+
+05/Apr/2016 04:54:11,079- Logging: Properties file loaded
+05/Apr/2016 04:54:11,081- Logging: Properties file loaded
+05/Apr/2016 04:54:11,114- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 04:56:48,846- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=52860,localport=13000]
+05/Apr/2016 04:56:48,875- Logging: 
+Server Thread 52860 running.
+
+05/Apr/2016 04:57:14,909- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=8178,localport=13000]
+05/Apr/2016 04:57:14,910- Logging: 
+Server Thread 8178 running.
+
+05/Apr/2016 04:57:23,780- Logging: 
+Removing client thread 8178 at 1
+05/Apr/2016 04:57:49,154- Logging: 
+Client accepted: Socket[addr=/192.168.43.176,port=8183,localport=13000]
+05/Apr/2016 04:57:49,155- Logging: 
+Server Thread 8183 running.
+
+05/Apr/2016 04:58:18,488- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=52938,localport=13000]
+05/Apr/2016 04:58:18,490- Logging: 
+Server Thread 52938 running.
+
+05/Apr/2016 04:58:26,031- Logging: 
+Removing client thread 52938 at 2
+05/Apr/2016 04:58:26,129- Logging: java.net.SocketException: Connection reset
+05/Apr/2016 04:58:26,130- Logging: 
+Removing client thread 52860 at 0
+05/Apr/2016 04:58:52,261- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=52967,localport=13000]
+05/Apr/2016 04:58:52,261- Logging: 
+Server Thread 52967 running.
+
+05/Apr/2016 05:03:35,092- Logging: Properties file loaded
+05/Apr/2016 05:03:35,094- Logging: Properties file loaded
+05/Apr/2016 05:03:35,127- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 05:05:15,422- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=8237,localport=13000]
+05/Apr/2016 05:05:15,426- Logging: 
+Server Thread 8237 running.
+
+05/Apr/2016 05:06:18,919- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=53302,localport=13000]
+05/Apr/2016 05:06:18,923- Logging: 
+Server Thread 53302 running.
+
+05/Apr/2016 05:13:38,619- Logging: Properties file loaded
+05/Apr/2016 05:13:38,621- Logging: Properties file loaded
+05/Apr/2016 05:13:38,654- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 05:13:56,858- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=8283,localport=13000]
+05/Apr/2016 05:13:56,861- Logging: 
+Server Thread 8283 running.
+
+05/Apr/2016 05:14:13,501- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=53668,localport=13000]
+05/Apr/2016 05:14:13,503- Logging: 
+Server Thread 53668 running.
+
+05/Apr/2016 05:14:16,442- Logging: 
+Removing client thread 53668 at 1
+05/Apr/2016 05:14:45,339- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=53693,localport=13000]
+05/Apr/2016 05:14:45,341- Logging: 
+Server Thread 53693 running.
+
+05/Apr/2016 05:17:34,968- Logging: 
+Removing client thread 8283 at 0
+05/Apr/2016 05:18:17,114- Logging: 
+Removing client thread 53693 at 0
+05/Apr/2016 05:18:59,625- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=53916,localport=13000]
+05/Apr/2016 05:18:59,626- Logging: 
+Server Thread 53916 running.
+
+05/Apr/2016 05:19:14,479- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=8325,localport=13000]
+05/Apr/2016 05:19:14,480- Logging: 
+Server Thread 8325 running.
+
+05/Apr/2016 05:29:49,971- Logging: Properties file loaded
+05/Apr/2016 05:29:49,973- Logging: Properties file loaded
+05/Apr/2016 05:29:50,005- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 05:29:56,729- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=54422,localport=13000]
+05/Apr/2016 05:29:56,736- Logging: 
+Server Thread 54422 running.
+
+05/Apr/2016 05:30:03,422- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=8402,localport=13000]
+05/Apr/2016 05:30:03,423- Logging: 
+Server Thread 8402 running.
+
+05/Apr/2016 05:45:41,365- Logging: Properties file loaded
+05/Apr/2016 05:45:41,367- Logging: Properties file loaded
+05/Apr/2016 05:45:41,398- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 05:45:43,094- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=55225,localport=13000]
+05/Apr/2016 05:45:43,105- Logging: 
+Server Thread 55225 running.
+
+05/Apr/2016 05:45:56,934- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=8517,localport=13000]
+05/Apr/2016 05:45:56,935- Logging: 
+Server Thread 8517 running.
+
+05/Apr/2016 05:50:00,903- Logging: Properties file loaded
+05/Apr/2016 05:50:00,905- Logging: Properties file loaded
+05/Apr/2016 05:50:00,937- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 05:50:08,772- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=8540,localport=13000]
+05/Apr/2016 05:50:08,775- Logging: 
+Server Thread 8540 running.
+
+05/Apr/2016 05:52:14,367- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=55580,localport=13000]
+05/Apr/2016 05:52:14,369- Logging: 
+Server Thread 55580 running.
+
+05/Apr/2016 05:55:00,744- Logging: Properties file loaded
+05/Apr/2016 05:55:00,747- Logging: Properties file loaded
+05/Apr/2016 05:55:00,795- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 05:55:05,838- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=8584,localport=13000]
+05/Apr/2016 05:55:05,841- Logging: 
+Server Thread 8584 running.
+
+05/Apr/2016 05:55:30,070- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=55749,localport=13000]
+05/Apr/2016 05:55:30,072- Logging: 
+Server Thread 55749 running.
+
+05/Apr/2016 06:33:59,932- Logging: Properties file loaded
+05/Apr/2016 06:33:59,934- Logging: Properties file loaded
+05/Apr/2016 06:33:59,975- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 06:34:11,020- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=9240,localport=13000]
+05/Apr/2016 06:34:11,023- Logging: 
+Server Thread 9240 running.
+
+05/Apr/2016 06:36:03,425- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=57309,localport=13000]
+05/Apr/2016 06:36:03,428- Logging: 
+Server Thread 57309 running.
+
+05/Apr/2016 06:38:22,818- Logging: Properties file loaded
+05/Apr/2016 06:38:22,820- Logging: Properties file loaded
+05/Apr/2016 06:38:22,853- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 06:38:34,266- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=57438,localport=13000]
+05/Apr/2016 06:38:34,269- Logging: 
+Server Thread 57438 running.
+
+05/Apr/2016 06:38:40,184- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=9294,localport=13000]
+05/Apr/2016 06:38:40,185- Logging: 
+Server Thread 9294 running.
+
+05/Apr/2016 06:45:13,328- Logging: Properties file loaded
+05/Apr/2016 06:45:13,330- Logging: Properties file loaded
+05/Apr/2016 06:45:13,360- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+05/Apr/2016 06:47:28,584- Logging: 
+Client accepted: Socket[addr=/192.168.43.97,port=18583,localport=13000]
+05/Apr/2016 06:47:28,594- Logging: 
+Server Thread 18583 running.
+
+05/Apr/2016 06:47:56,908- Logging: 
+Client accepted: Socket[addr=/192.168.43.6,port=57869,localport=13000]
+05/Apr/2016 06:47:56,911- Logging: 
+Server Thread 57869 running.
+
+05/Apr/2016 07:09:31,082- Logging: 
+Removing client thread 18583 at 0
+05/Apr/2016 07:13:42,922- Logging: 
+Removing client thread 57869 at 0
+06/Apr/2016 01:04:43,450- Logging: Properties file loaded
+06/Apr/2016 01:04:43,455- Logging: Properties file loaded
+06/Apr/2016 01:04:43,545- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 01:05:22,567- Logging: 
+Client accepted: Socket[addr=/10.20.120.151,port=52676,localport=13000]
+06/Apr/2016 01:05:22,576- Logging: 
+Server Thread 52676 running.
+
+06/Apr/2016 01:06:45,785- Logging: 
+Client accepted: Socket[addr=/10.20.120.132,port=12998,localport=13000]
+06/Apr/2016 01:06:45,788- Logging: 
+Server Thread 12998 running.
+
+06/Apr/2016 01:09:34,601- Logging: Properties file loaded
+06/Apr/2016 01:09:34,604- Logging: Properties file loaded
+06/Apr/2016 01:09:34,636- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 01:09:42,496- Logging: 
+Client accepted: Socket[addr=/10.20.120.151,port=52679,localport=13000]
+06/Apr/2016 01:09:42,520- Logging: 
+Server Thread 52679 running.
+
+06/Apr/2016 01:10:14,434- Logging: 
+Client accepted: Socket[addr=/10.20.120.132,port=13123,localport=13000]
+06/Apr/2016 01:10:14,435- Logging: 
+Server Thread 13123 running.
+
+06/Apr/2016 01:35:03,637- Logging: 
+Removing client thread 52679 at 0
+06/Apr/2016 01:47:29,820- Logging: 
+Client accepted: Socket[addr=/10.20.120.151,port=54917,localport=13000]
+06/Apr/2016 01:47:29,824- Logging: 
+Server Thread 54917 running.
+
+06/Apr/2016 01:47:56,337- Logging: 
+Removing client thread 13123 at 0
+06/Apr/2016 01:48:22,053- Logging: 
+Client accepted: Socket[addr=/10.20.120.132,port=13912,localport=13000]
+06/Apr/2016 01:48:22,054- Logging: 
+Server Thread 13912 running.
+
+06/Apr/2016 01:57:33,071- Logging: 
+Client accepted: Socket[addr=/10.20.120.151,port=54987,localport=13000]
+06/Apr/2016 01:57:33,073- Logging: 
+Server Thread 54987 running.
+
+06/Apr/2016 01:57:44,652- Logging: 
+Removing client thread 54987 at 2
+06/Apr/2016 01:58:12,237- Logging: Properties file loaded
+06/Apr/2016 01:58:12,239- Logging: Properties file loaded
+06/Apr/2016 01:58:12,272- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 01:58:49,406- Logging: 
+Client accepted: Socket[addr=/10.20.120.151,port=54993,localport=13000]
+06/Apr/2016 01:58:49,418- Logging: 
+Server Thread 54993 running.
+
+06/Apr/2016 01:59:16,007- Logging: 
+Client accepted: Socket[addr=/10.20.120.132,port=14155,localport=13000]
+06/Apr/2016 01:59:16,008- Logging: 
+Server Thread 14155 running.
+
+06/Apr/2016 02:00:09,622- Logging: java.lang.NullPointerException
+06/Apr/2016 02:00:09,623- Logging: 
+Removing client thread 54993 at 0
+06/Apr/2016 02:00:50,539- Logging: 
+Client accepted: Socket[addr=/10.20.120.151,port=54995,localport=13000]
+06/Apr/2016 02:00:50,543- Logging: 
+Server Thread 54995 running.
+
+06/Apr/2016 02:01:04,890- Logging: java.lang.NullPointerException
+06/Apr/2016 02:01:04,890- Logging: 
+Removing client thread 54995 at 1
+06/Apr/2016 02:01:39,457- Logging: 
+Removing client thread 14155 at 0
+06/Apr/2016 02:02:00,279- Logging: Properties file loaded
+06/Apr/2016 02:02:00,281- Logging: Properties file loaded
+06/Apr/2016 02:02:00,314- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 02:02:19,125- Logging: 
+Client accepted: Socket[addr=/10.20.120.132,port=14177,localport=13000]
+06/Apr/2016 02:02:19,128- Logging: 
+Server Thread 14177 running.
+
+06/Apr/2016 02:02:57,841- Logging: 
+Client accepted: Socket[addr=/10.20.120.151,port=55002,localport=13000]
+06/Apr/2016 02:02:57,846- Logging: 
+Server Thread 55002 running.
+
+06/Apr/2016 02:03:52,884- Logging: java.lang.NullPointerException
+06/Apr/2016 02:03:52,884- Logging: 
+Removing client thread 14177 at 0
+06/Apr/2016 02:39:43,291- Logging: 
+Removing client thread 55002 at 0
+06/Apr/2016 03:51:37,401- Logging: Properties file loaded
+06/Apr/2016 03:51:37,408- Logging: Properties file loaded
+06/Apr/2016 03:51:37,528- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 03:55:06,219- Logging: 
+Client accepted: Socket[addr=/10.20.120.132,port=16810,localport=13000]
+06/Apr/2016 03:55:06,227- Logging: 
+Server Thread 16810 running.
+
+06/Apr/2016 04:04:59,728- Logging: 
+Client accepted: Socket[addr=/10.20.120.132,port=16968,localport=13000]
+06/Apr/2016 04:04:59,732- Logging: 
+Server Thread 16968 running.
+
+06/Apr/2016 04:16:18,072- Logging: java.net.SocketException: Software caused connection abort: recv failed
+06/Apr/2016 04:16:18,074- Logging: 
+Removing client thread 16810 at 0
+06/Apr/2016 04:16:18,074- Logging: java.net.SocketException: Software caused connection abort: recv failed
+06/Apr/2016 04:16:18,076- Logging: 
+Removing client thread 16968 at 0
+06/Apr/2016 05:38:33,347- Logging: Properties file loaded
+06/Apr/2016 05:38:33,352- Logging: Properties file loaded
+06/Apr/2016 05:38:33,451- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 05:40:22,895- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17277,localport=13000]
+06/Apr/2016 05:40:22,904- Logging: 
+Server Thread 17277 running.
+
+06/Apr/2016 05:40:49,675- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17278,localport=13000]
+06/Apr/2016 05:40:49,679- Logging: 
+Server Thread 17278 running.
+
+06/Apr/2016 05:43:51,686- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17281,localport=13000]
+06/Apr/2016 05:43:51,690- Logging: 
+Server Thread 17281 running.
+
+06/Apr/2016 05:50:57,670- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17288,localport=13000]
+06/Apr/2016 05:50:57,671- Logging: 
+Server Thread 17288 running.
+
+06/Apr/2016 05:51:22,554- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17289,localport=13000]
+06/Apr/2016 05:51:22,555- Logging: 
+Server Thread 17289 running.
+
+06/Apr/2016 05:52:36,504- Logging: 
+Removing client thread 17288 at 3
+06/Apr/2016 05:52:44,474- Logging: 
+Removing client thread 17281 at 2
+06/Apr/2016 05:53:28,349- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17292,localport=13000]
+06/Apr/2016 05:53:28,350- Logging: 
+Server Thread 17292 running.
+
+06/Apr/2016 05:53:48,396- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17293,localport=13000]
+06/Apr/2016 05:53:48,397- Logging: 
+Server Thread 17293 running.
+
+06/Apr/2016 06:04:39,863- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 06:04:39,864- Logging: 
+Removing client thread 17278 at 1
+06/Apr/2016 06:04:56,109- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 06:04:56,109- Logging: 
+Removing client thread 17277 at 0
+06/Apr/2016 06:05:06,763- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 06:05:06,763- Logging: 
+Removing client thread 17289 at 0
+06/Apr/2016 06:14:30,558- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17307,localport=13000]
+06/Apr/2016 06:14:30,559- Logging: 
+Server Thread 17307 running.
+
+06/Apr/2016 06:15:21,224- Logging: 
+Removing client thread 17307 at 2
+06/Apr/2016 06:15:31,523- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17309,localport=13000]
+06/Apr/2016 06:15:31,524- Logging: 
+Server Thread 17309 running.
+
+06/Apr/2016 06:15:52,123- Logging: 
+Removing client thread 17309 at 2
+06/Apr/2016 06:15:57,352- Logging: 
+Removing client thread 17293 at 1
+06/Apr/2016 06:23:07,907- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17314,localport=13000]
+06/Apr/2016 06:23:07,908- Logging: 
+Server Thread 17314 running.
+
+06/Apr/2016 06:35:08,368- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17323,localport=13000]
+06/Apr/2016 06:35:08,368- Logging: 
+Server Thread 17323 running.
+
+06/Apr/2016 06:36:16,804- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 06:36:16,804- Logging: 
+Removing client thread 17323 at 2
+06/Apr/2016 06:46:01,386- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17330,localport=13000]
+06/Apr/2016 06:46:01,386- Logging: 
+Server Thread 17330 running.
+
+06/Apr/2016 06:47:14,458- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 06:47:14,458- Logging: 
+Removing client thread 17330 at 2
+06/Apr/2016 06:49:14,328- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17333,localport=13000]
+06/Apr/2016 06:49:14,329- Logging: 
+Server Thread 17333 running.
+
+06/Apr/2016 06:49:37,695- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 06:49:37,696- Logging: 
+Removing client thread 17333 at 2
+06/Apr/2016 06:49:42,686- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17335,localport=13000]
+06/Apr/2016 06:49:42,687- Logging: 
+Server Thread 17335 running.
+
+06/Apr/2016 06:50:01,854- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 06:50:01,854- Logging: 
+Removing client thread 17335 at 2
+06/Apr/2016 06:50:11,741- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17336,localport=13000]
+06/Apr/2016 06:50:11,742- Logging: 
+Server Thread 17336 running.
+
+06/Apr/2016 06:51:52,768- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 06:51:52,769- Logging: 
+Removing client thread 17336 at 2
+06/Apr/2016 06:52:43,908- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17338,localport=13000]
+06/Apr/2016 06:52:43,909- Logging: 
+Server Thread 17338 running.
+
+06/Apr/2016 06:53:17,018- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 06:53:17,019- Logging: 
+Removing client thread 17338 at 2
+06/Apr/2016 07:54:19,397- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17566,localport=13000]
+06/Apr/2016 07:54:19,401- Logging: 
+Server Thread 17566 running.
+
+06/Apr/2016 07:54:58,582- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=17575,localport=13000]
+06/Apr/2016 07:54:58,585- Logging: 
+Server Thread 17575 running.
+
+06/Apr/2016 08:13:19,991- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 08:13:19,992- Logging: 
+Removing client thread 17566 at 2
+06/Apr/2016 08:13:30,428- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 08:13:30,429- Logging: 
+Removing client thread 17575 at 2
+06/Apr/2016 08:14:17,445- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18009,localport=13000]
+06/Apr/2016 08:14:17,448- Logging: 
+Server Thread 18009 running.
+
+06/Apr/2016 08:15:57,990- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18022,localport=13000]
+06/Apr/2016 08:15:57,994- Logging: 
+Server Thread 18022 running.
+
+06/Apr/2016 08:16:56,353- Logging: java.lang.NullPointerException
+06/Apr/2016 08:16:56,354- Logging: 
+Removing client thread 17314 at 1
+06/Apr/2016 08:17:08,959- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18030,localport=13000]
+06/Apr/2016 08:17:08,960- Logging: 
+Server Thread 18030 running.
+
+06/Apr/2016 08:20:59,846- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 08:20:59,846- Logging: 
+Removing client thread 18009 at 1
+06/Apr/2016 08:21:08,864- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 08:21:08,864- Logging: 
+Removing client thread 18022 at 1
+06/Apr/2016 08:21:26,677- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18063,localport=13000]
+06/Apr/2016 08:21:26,681- Logging: 
+Server Thread 18063 running.
+
+06/Apr/2016 08:21:59,678- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 08:21:59,679- Logging: 
+Removing client thread 18063 at 2
+06/Apr/2016 08:22:08,492- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18071,localport=13000]
+06/Apr/2016 08:22:08,495- Logging: 
+Server Thread 18071 running.
+
+06/Apr/2016 08:34:12,600- Logging: 
+Removing client thread 17292 at 0
+06/Apr/2016 08:34:39,207- Logging: 
+Removing client thread 18030 at 0
+06/Apr/2016 08:34:53,869- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 08:34:53,869- Logging: 
+Removing client thread 18071 at 0
+06/Apr/2016 08:35:12,667- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18154,localport=13000]
+06/Apr/2016 08:35:12,671- Logging: 
+Server Thread 18154 running.
+
+06/Apr/2016 08:35:53,763- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=18161,localport=13000]
+06/Apr/2016 08:35:53,767- Logging: 
+Server Thread 18161 running.
+
+06/Apr/2016 09:37:44,434- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 09:37:44,435- Logging: 
+Removing client thread 18161 at 1
+06/Apr/2016 09:38:20,073- Logging: Properties file loaded
+06/Apr/2016 09:38:20,075- Logging: Properties file loaded
+06/Apr/2016 09:38:20,549- Logging: Database created!
+06/Apr/2016 09:38:20,552- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 09:57:27,188- Logging: Properties file loaded
+06/Apr/2016 09:57:27,190- Logging: Properties file loaded
+06/Apr/2016 09:57:27,439- Logging: Database created!
+06/Apr/2016 09:57:27,441- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 10:39:21,902- Logging: Properties file loaded
+06/Apr/2016 10:39:21,904- Logging: Properties file loaded
+06/Apr/2016 10:39:22,155- Logging: Database created!
+06/Apr/2016 10:39:22,158- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 10:39:41,392- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=20842,localport=13000]
+06/Apr/2016 10:39:41,394- Logging: 
+Server Thread 20842 running.
+
+06/Apr/2016 10:41:24,437- Logging: Properties file loaded
+06/Apr/2016 10:41:24,439- Logging: Properties file loaded
+06/Apr/2016 10:41:24,790- Logging: Can't create database 'login'; database exists
+06/Apr/2016 10:41:24,792- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 10:42:48,804- Logging: Properties file loaded
+06/Apr/2016 10:42:48,806- Logging: Properties file loaded
+06/Apr/2016 10:42:49,049- Logging: Can't create database 'login'; database exists
+06/Apr/2016 10:42:49,050- Logging: Can not bind to port : 13000
+Retrying
+
+06/Apr/2016 10:42:49,050- Logging: Properties file loaded
+06/Apr/2016 10:42:49,050- Logging: Properties file loaded
+06/Apr/2016 10:42:49,054- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 20869
+06/Apr/2016 10:43:04,624- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=20871,localport=13000]
+06/Apr/2016 10:43:04,628- Logging: 
+Server Thread 20871 running.
+
+06/Apr/2016 11:12:51,532- Logging: Properties file loaded
+06/Apr/2016 11:12:51,534- Logging: Properties file loaded
+06/Apr/2016 11:12:51,792- Logging: Can't create database 'login'; database exists
+06/Apr/2016 11:12:51,794- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 11:13:10,404- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=21224,localport=13000]
+06/Apr/2016 11:13:10,406- Logging: 
+Server Thread 21224 running.
+
+06/Apr/2016 11:25:01,221- Logging: Properties file loaded
+06/Apr/2016 11:25:01,223- Logging: Properties file loaded
+06/Apr/2016 11:25:01,468- Logging: Can't create database 'login'; database exists
+06/Apr/2016 11:25:01,469- Logging: Can not bind to port : 13000
+Retrying
+
+06/Apr/2016 11:25:01,469- Logging: Properties file loaded
+06/Apr/2016 11:25:01,470- Logging: Properties file loaded
+06/Apr/2016 11:25:01,474- Logging: Server startet. IP : Digitz-PC/192.168.56.1, Port : 21333
+06/Apr/2016 11:25:18,420- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=21336,localport=13000]
+06/Apr/2016 11:25:18,421- Logging: 
+Server Thread 21336 running.
+
+06/Apr/2016 11:27:02,008- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=21352,localport=13000]
+06/Apr/2016 11:27:02,009- Logging: 
+Server Thread 21352 running.
+
+06/Apr/2016 11:49:07,176- Logging: Properties file loaded
+06/Apr/2016 11:49:07,182- Logging: Properties file loaded
+06/Apr/2016 11:49:08,024- Logging: Can't create database 'login'; database exists
+06/Apr/2016 11:49:08,031- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 11:49:28,444- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=21634,localport=13000]
+06/Apr/2016 11:49:28,450- Logging: 
+Server Thread 21634 running.
+
+06/Apr/2016 12:11:32,993- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 12:11:32,995- Logging: 
+Removing client thread 21634 at 0
+06/Apr/2016 15:57:57,056- Logging: Properties file loaded
+06/Apr/2016 15:57:57,058- Logging: Properties file loaded
+06/Apr/2016 15:57:57,405- Logging: Can't create database 'login'; database exists
+06/Apr/2016 15:57:57,410- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 15:58:11,105- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=25169,localport=13000]
+06/Apr/2016 15:58:11,107- Logging: 
+Server Thread 25169 running.
+
+06/Apr/2016 16:03:32,421- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 16:03:32,422- Logging: 
+Removing client thread 25169 at 0
+06/Apr/2016 16:03:42,091- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=25323,localport=13000]
+06/Apr/2016 16:03:42,092- Logging: 
+Server Thread 25323 running.
+
+06/Apr/2016 16:04:12,235- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=25360,localport=13000]
+06/Apr/2016 16:04:12,236- Logging: 
+Server Thread 25360 running.
+
+06/Apr/2016 16:11:38,165- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 16:11:38,165- Logging: 
+Removing client thread 25323 at 0
+06/Apr/2016 16:11:50,561- Logging: 
+Removing client thread 25360 at 0
+06/Apr/2016 16:13:55,864- Logging: Properties file loaded
+06/Apr/2016 16:13:55,866- Logging: Properties file loaded
+06/Apr/2016 16:13:56,116- Logging: Can't create database 'login'; database exists
+06/Apr/2016 16:13:56,118- Logging: Server started on IP : Digitz-PC/192.168.56.1, Port : 13000
+06/Apr/2016 16:14:11,254- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=25579,localport=13000]
+06/Apr/2016 16:14:11,256- Logging: 
+Server Thread 25579 running.
+
+06/Apr/2016 16:14:40,918- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=25596,localport=13000]
+06/Apr/2016 16:14:40,919- Logging: 
+Server Thread 25596 running.
+
+06/Apr/2016 16:20:16,354- Logging: java.net.SocketException: Connection reset
+06/Apr/2016 16:20:16,354- Logging: 
+Removing client thread 25579 at 0
+06/Apr/2016 16:20:52,216- Logging: 
+Removing client thread 25596 at 0
+06/Apr/2016 16:28:21,214- Logging: 
+Client accepted: Socket[addr=/127.0.0.1,port=25861,localport=13000]
+06/Apr/2016 16:28:21,215- Logging: 
+Server Thread 25861 running.
+

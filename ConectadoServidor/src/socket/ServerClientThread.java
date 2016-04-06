@@ -56,7 +56,7 @@ class ServerClientThread extends Thread {
 			} catch (Exception ioe) {
 				System.out.println(ID + " ERROR reading: " + ioe.getMessage());
 				Logging.getLogger().error(ioe);
-				server.remove(ID);
+				server.removeUser(ID);
 				running = false;
 			}
 		}
